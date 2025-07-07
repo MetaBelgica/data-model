@@ -1,0 +1,41 @@
+#tab-general-colors, #tab-color-schemas {
+    width: 100%;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th {
+    padding: 5px 5px 5px 5px;
+}
+
+td {
+    padding: 5px 5px 5px 5px;
+}
+
+table.example-table td {
+  width: 50%;
+}
+
+table.example-table img {
+  height: 400px;
+  width: 400px;
+}
+
+.center-text th, .center-text td {
+    text-align: center;
+}
+
+table.small-images img {
+    max-width: 125px;
+}
+
+span.bold {
+    font-weight: bold;
+}
+
+span.emph {
+    font-style: italic;
+}
