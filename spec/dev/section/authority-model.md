@@ -1,4 +1,4 @@
-## Entity-Relationship model
+## Authority entities and properties
 
 Within MetaBelgica we maintain [=authorities=], represented as [=entities=] that are interlinked.
 Generally we distinguish the following three types of entities and additionally have the concept of time represented as [=property=].
