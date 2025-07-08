@@ -3,6 +3,12 @@ This repository contains (documentation of) the data model of the MetaBelgica pl
 
 Online available via http://w3id.org/metabelgica/data-model
 
+This repository contains
+
+* The specification (`spec` directory)
+* RDF vocabularies (`rdf` directory)
+* The Wikibase data model (`wikibase` directory)
+
 ## Usage
 
 You can view the content locally
