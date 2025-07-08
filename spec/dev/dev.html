@@ -20,20 +20,20 @@
             ],
             doRdfa: "true",
             copyrightStart: "2025",
-            edDraftURI: "https://w3id.org/metabelgica/data-model/",
+            edDraftURI: "https://w3id.org/metabelgica/data-model/spec/",
             otherLinks: [
             {
               key: "This Version",
               data: [{
-                value: "https://w3id.org/metabelgica/data-model/%thisDate%/",
-                href: "https://w3id.org/metabelgica/data-model/%thisDate%/"
+                value: "https://w3id.org/metabelgica/data-model/spec/%thisDate%/",
+                href: "https://w3id.org/metabelgica/data-model/spec/%thisDate%/"
             }]
             },
             {
               key: "Previous Version",
               data: [{
-                value: "https://w3id.org/metabelgica/data-model/%prevDate%/",
-                href: "https://w3id.org/metabelgica/data-model/%prevDate%/"
+                value: "https://w3id.org/metabelgica/data-model/spec/%prevDate%/",
+                href: "https://w3id.org/metabelgica/data-model/spec/%prevDate%/"
               }]
             }
             ],
@@ -64,8 +64,18 @@
                   title: "MARC21 Format for Authority Data"
                   , href: "https://www.loc.gov/marc/authority/"
                   , publisher: "Library of Congress (United States)"
+                },
+                "RFC2119": {
+                 href: "https://www.rfc-editor.org/rfc/rfc2119",
+                 title: "Key words for use in RFCs to Indicate Requirement Levels",
+                 authors: [
+                        "S. Bradner"
+                    ],
+                 status: "Best Current Practice",
+                 publisher: "IETF",
+                 id: "rfc2119",
+                 date: "March 1997"
                 }
-
            }
         };
     </script>
@@ -85,6 +95,7 @@
 
 <section id="entity-relationship" data-include="section/entity-relationship.md" data-include-format="markdown"></section>
 
+<section id="mappings" data-include="section/mappings.md" data-include-format="markdown"></section>
 
 </body>
 </html>

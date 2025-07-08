@@ -5,7 +5,7 @@ We have the intention to provide data of the MetaBelgica platform in different d
 
 
 ### Wikibase Data Model
-
+Todo: Wikibase data model
 
 ### Schema.org
 Todo: Schema.org mapping
