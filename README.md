@@ -1,7 +1,7 @@
 # MetaBelgica data model
 This repository contains (documentation of) the data model of the MetaBelgica platform.
 
-Online available via http://w3id.org/metabelgica/data-model
+Online available via http://w3id.org/metabelgica/doc/data-model
 
 This repository contains
 
