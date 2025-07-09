@@ -18,12 +18,13 @@ We employ a visibility property to indicate the envisioned target audience.
 In MetaBelgica we distinguish between the following three use cases:
 
 1. `internal`: An entity/property is only meant to be used internally 
-2. `shared`: An entity/property can be shared in a research context and in the frame of a data sharing agreement
+2. `shared`: An entity/property can be shared in a research context and in the frame of a data sharing agreement with a trusted partner
 3. `public`: An entity/property is meant to be displayed publicly
 
 <p class="note" title="Visibility is merely an annotation">
 Indicating a visibility is merely an annotation, you (or the software using the data) still need to use this annotation and act/filter accordingly!
 </p>
+
 
 The visibility property can be used to either annotate an entity or a property.
 Entities annotated with `internal` or `shared` `must not` be shown publicly.
