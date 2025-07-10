@@ -70,5 +70,5 @@ html = html.replace(/%prevDate%/g, dirs[0]);
 fs.writeFileSync(path.resolve(__dirname, '..', 'index.html'), html);
 
 // Next to the dist root, the current version will also reside in its dedicated version directory for which paths need to be adapted
-//html = html.replace(/\.\/resources/g, '../resources');
+html = html.replace(/\.\.\/resources/g, '\./resources');
 fs.writeFileSync(path.resolve(__dirname, '..', dateString, 'index.html'), html);

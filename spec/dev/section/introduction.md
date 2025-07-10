@@ -10,4 +10,20 @@ Detailed documentation about the RDF vocabulary is available via the tool Widoco
 
 ### Document conventions
 
-Conformance requirements are expressed with a combination of descriptive assertions and [[RFC2119]] terminology. The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in the normative parts of this document are to be interpreted as described in RFC 2119. However, for readability, these words do not appear in all uppercase letters in this specification. 
+Conformance requirements are expressed with a combination of descriptive assertions and [[RFC2119]] terminology. 
+
+<p id="respecRFC2119">The key words 
+  <em class="rfc2119">MAY</em>, 
+  <em class="rfc2119">MUST</em>, 
+  <em class="rfc2119">MUST NOT</em>, 
+  <em class="rfc2119">REQUIRED</em>, 
+  <em class="rfc2119">SHALL</em>, 
+  <em class="rfc2119">SHALL NOT</em>, 
+  <em class="rfc2119">SHOULD</em>, 
+  <em class="rfc2119">SHOULD NOT</em>, 
+  <em class="rfc2119">RECOMMENDED</em>, 
+  <em class="rfc2119">MAY</em>,
+  and <em class="rfc2119">OPTIONAL</em>, 
+  in the normative parts of this document are to be interpreted as described in RFC 2119.
+  However, for readability, these words do not appear in all uppercase letters in this specification.
+</p>
