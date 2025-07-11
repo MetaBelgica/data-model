@@ -4,7 +4,7 @@ Throughout the document, the following terminology is used.
 
 <dl>
 
-  <dt><dfn id="dfn-alternate-name">alternate-name</dfn></dt>
+  <dt><dfn id="dfn-alternate-name">alternate name</dfn></dt>
   <dd>
     [=Authorities=] (such as persons or organizations) may have several spellings.
     Next to the [=preferred-name=] spelling, alternate names record other possible spellings.
@@ -18,9 +18,14 @@ Throughout the document, the following terminology is used.
     Historically used as a single way to spell something and hence a form of identifier.
   </dd>
 
+  <dt><dfn id="dfn-data-subject">data-subject</dfn></dt>
+  <dd>
+    According to the GDPR: ...
+  </dd>
 
   <dt><dfn id="dfn-entity">entity</dfn></dt>
   <dd>
+    Todo: definition of an entity
   </dd>
 
   <dt><dfn id="dfn-isni">ISNI</dfn></dt>
@@ -28,11 +33,21 @@ Throughout the document, the following terminology is used.
     The International Standard Name Identifier (ISO 27729) is used to uniquely identify persons and organisations involved in the creation, production, management and distribution of cultural content. ISNI is a unique and permanent 16-digit number.
   </dd>
 
+  <dt><dfn id="dfn-owa">OWA</dfn></dt>
+  <dd>
+    The Open World Assumption (OWA) specifies that ...
+  </dd>
 
   <dt><dfn id="dfn-property">property</dfn></dt>
   <dd>
     Todo: definition of a property
   </dd>
+
+  <dt><dfn id="dfn-property-instance">property instance</dfn></dt>
+  <dd>
+    The usage of a property on an entity, i.e. the value of the property.
+  </dd>
+
 
 
 

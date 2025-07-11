@@ -3,6 +3,13 @@
 <meta name="generator" content="ReSpec 35.4.2">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <style>
+span.example-title{text-transform:none}
+:is(aside,div).example,div.illegal-example{padding:.5em;margin:1em 0;position:relative;clear:both}
+div.illegal-example{color:red}
+div.illegal-example p{color:#000}
+aside.example div.example{border-left-width:.1em;border-color:#999;background:#fff}
+</style>
+<style>
 .issue-label{text-transform:initial}
 .warning>p:first-child{margin-top:0}
 .warning{padding:.5em;border-left-width:.5em;border-left-style:solid}
@@ -40,9 +47,9 @@ dfn{cursor:pointer}
     
 
     
-<link rel="stylesheet" type="text/css" href="./resources/css/style.css">
+<link rel="stylesheet" type="text/css" href="../resources/css/style.css">
     
-<link rel="stylesheet" type="text/css" href="./resources/css/extras.css">
+<link rel="stylesheet" type="text/css" href="../resources/css/extras.css">
     
     
 
@@ -134,8 +141,8 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
       "key": "This Version",
       "data": [
         {
-          "value": "https://w3id.org/metabelgica/data-model/spec/20250709/",
-          "href": "https://w3id.org/metabelgica/data-model/spec/20250709/"
+          "value": "https://w3id.org/metabelgica/data-model/spec/20250711/",
+          "href": "https://w3id.org/metabelgica/data-model/spec/20250711/"
         }
       ]
     },
@@ -143,8 +150,8 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
       "key": "Previous Version",
       "data": [
         {
-          "value": "https://w3id.org/metabelgica/data-model/spec/20250708/",
-          "href": "https://w3id.org/metabelgica/data-model/spec/20250708/"
+          "value": "https://w3id.org/metabelgica/data-model/spec/20250709/",
+          "href": "https://w3id.org/metabelgica/data-model/spec/20250709/"
         }
       ]
     }
@@ -161,6 +168,12 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
       "title": "RDF 1.1 Concepts and Abstract Syntax",
       "href": "https://www.w3.org/TR/rdf11-concepts/",
       "publisher": "W3C"
+    },
+    "DPV": {
+      "title": "Data Privcay Vocabulary (DPV), version 2.1",
+      "href": "https://w3c.github.io/dpv/2.1/dpv/",
+      "publisher": "W3C Data Privacy Vocabularies and Contorls Community Group (DPVCG)",
+      "id": "dpv"
     },
     "SHACL": {
       "title": "Shapes Constraint Langauge (SHACL)",
@@ -188,16 +201,47 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
       "publisher": "IETF",
       "id": "rfc2119",
       "date": "March 1997"
+    },
+    "RFC5646": {
+      "href": "https://www.rfc-editor.org/rfc/rfc5646",
+      "title": "Tags for Identifying Languages",
+      "authors": [
+        "A. Phillips, Ed.",
+        "M. Davis, Ed."
+      ],
+      "status": "Best Current Practice",
+      "obsoletes": [
+        "RFC4646"
+      ],
+      "publisher": "IETF",
+      "id": "rfc5646",
+      "date": "September 2009"
+    },
+    "ISO8601:2019-1": {
+      "href": "https://www.iso.org/standard/70907.html",
+      "publisher": "International Organization for Standardization (ISO)",
+      "date": "2019",
+      "status": "ISO 8601-1:2019",
+      "title": "Date and time — Representations for information interchange — Part 1: Basic rules. ISO 8601-1:2019.",
+      "id": "ISO8601-1"
+    },
+    "ISO8601:2019-2": {
+      "href": "https://www.iso.org/standard/70908.html",
+      "publisher": "International Organization for Standardization (ISO)",
+      "date": "2019",
+      "status": "ISO 8601-2:2019",
+      "title": "Date and time — Representations for information interchange — Part 2: Extensions. ISO 8601-2:2019.",
+      "id": "ISO8601-2"
     }
   },
-  "publishISODate": "2025-07-08T00:00:00.000Z",
-  "generatedSubtitle": "Unofficial Draft 08 July 2025"
+  "publishISODate": "2025-07-11T00:00:00.000Z",
+  "generatedSubtitle": "Unofficial Draft 11 July 2025"
 }</script>
 <link rel="stylesheet" href="https://www.w3.org/StyleSheets/TR/2021/W3C-UD"></head>
-<body class="h-entry informative"><div class="head">
+<body class="h-entry"><div class="head">
     
     <h1 id="title" class="title">MetaBelgica data model specification</h1> 
-    <p id="w3c-state">Unofficial Draft <time class="dt-published" datetime="2025-07-08">08 July 2025</time></p>
+    <p id="w3c-state">Unofficial Draft <time class="dt-published" datetime="2025-07-11">11 July 2025</time></p>
     <details open="">
       <summary>More details about this document</summary>
       <dl>
@@ -222,9 +266,9 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
         
         
         <dt>This Version</dt><dd>
-    <a href="https://w3id.org/metabelgica/data-model/spec/20250709/">https://w3id.org/metabelgica/data-model/spec/20250709/</a>
+    <a href="https://w3id.org/metabelgica/data-model/spec/20250711/">https://w3id.org/metabelgica/data-model/spec/20250711/</a>
   </dd><dt>Previous Version</dt><dd>
-    <a href="https://w3id.org/metabelgica/data-model/spec/20250708/">https://w3id.org/metabelgica/data-model/spec/20250708/</a>
+    <a href="https://w3id.org/metabelgica/data-model/spec/20250709/">https://w3id.org/metabelgica/data-model/spec/20250709/</a>
   </dd>
       </dl>
     </details>
@@ -241,7 +285,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
   </div>
 <section id="abstract" class="introductory"><h2>Abstract</h2>
 <p>This document defines the data model of MetaBelgica. It specifies how authority data can be represented in RDF and the MetaBelgica Wikibase.</p>
-</section><nav id="toc"><h2 class="introductory" id="table-of-contents">Table of Contents</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#abstract">Abstract</a></li><li class="tocline"><a class="tocxref" href="#introduction"><bdi class="secno">1. </bdi>Introduction</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#document-conventions"><bdi class="secno">1.1 </bdi>Document conventions</a></li></ol></li><li class="tocline"><a class="tocxref" href="#terminology"><bdi class="secno">2. </bdi>Terminology</a></li><li class="tocline"><a class="tocxref" href="#Authority model"><bdi class="secno">3. </bdi>Authority entities and properties</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#persons"><bdi class="secno">3.1 </bdi>Persons</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#preferred-name-spelling"><bdi class="secno">3.1.1 </bdi>Preferred name spelling</a></li><li class="tocline"><a class="tocxref" href="#alternate-names"><bdi class="secno">3.1.2 </bdi>Alternate names</a></li><li class="tocline"><a class="tocxref" href="#birth-date"><bdi class="secno">3.1.3 </bdi>Birth date</a></li><li class="tocline"><a class="tocxref" href="#death-date"><bdi class="secno">3.1.4 </bdi>Death date</a></li><li class="tocline"><a class="tocxref" href="#occupation"><bdi class="secno">3.1.5 </bdi>Occupation</a></li><li class="tocline"><a class="tocxref" href="#birth-place"><bdi class="secno">3.1.6 </bdi>Birth place</a></li><li class="tocline"><a class="tocxref" href="#death-place"><bdi class="secno">3.1.7 </bdi>Death place</a></li></ol></li><li class="tocline"><a class="tocxref" href="#organizations"><bdi class="secno">3.2 </bdi>Organizations</a></li><li class="tocline"><a class="tocxref" href="#locations"><bdi class="secno">3.3 </bdi>Locations</a></li><li class="tocline"><a class="tocxref" href="#time"><bdi class="secno">3.4 </bdi>Time</a></li></ol></li><li class="tocline"><a class="tocxref" href="#Administrative entities and properties"><bdi class="secno">4. </bdi>Administrative entities and properties</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#administrative-entities"><bdi class="secno">4.1 </bdi>Administrative entities</a></li><li class="tocline"><a class="tocxref" href="#administrative-properties"><bdi class="secno">4.2 </bdi>Administrative properties</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#visibility"><bdi class="secno">4.2.1 </bdi>Visibility</a></li><li class="tocline"><a class="tocxref" href="#person-record-category"><bdi class="secno">4.2.2 </bdi>Person record category</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#mappings"><bdi class="secno">5. </bdi>Mappings</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#wikibase-data-model"><bdi class="secno">5.1 </bdi>Wikibase Data Model</a></li><li class="tocline"><a class="tocxref" href="#schema-org"><bdi class="secno">5.2 </bdi>Schema.org</a></li><li class="tocline"><a class="tocxref" href="#skos"><bdi class="secno">5.3 </bdi>SKOS</a></li><li class="tocline"><a class="tocxref" href="#cidoc-crm"><bdi class="secno">5.4 </bdi>CIDOC-CRM</a></li><li class="tocline"><a class="tocxref" href="#oslo"><bdi class="secno">5.5 </bdi>OSLO</a></li></ol></li><li class="tocline"><a class="tocxref" href="#references"><bdi class="secno">A. </bdi>References</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#informative-references"><bdi class="secno">A.1 </bdi>Informative references</a></li></ol></li></ol></nav>
+</section><nav id="toc"><h2 class="introductory" id="table-of-contents">Table of Contents</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#abstract">Abstract</a></li><li class="tocline"><a class="tocxref" href="#introduction"><bdi class="secno">1. </bdi>Introduction</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#conformance"><bdi class="secno">1.1 </bdi>Conformance</a></li></ol></li><li class="tocline"><a class="tocxref" href="#terminology"><bdi class="secno">2. </bdi>Terminology</a></li><li class="tocline"><a class="tocxref" href="#Requirements"><bdi class="secno">3. </bdi>Requirements</a></li><li class="tocline"><a class="tocxref" href="#Authority model"><bdi class="secno">4. </bdi>Authority entities and properties</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#persons"><bdi class="secno">4.1 </bdi>Persons</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#preferred-name-spelling"><bdi class="secno">4.1.1 </bdi>Preferred name spelling</a></li><li class="tocline"><a class="tocxref" href="#alternate-names"><bdi class="secno">4.1.2 </bdi>Alternate names</a></li><li class="tocline"><a class="tocxref" href="#birth-date"><bdi class="secno">4.1.3 </bdi>Birth date</a></li><li class="tocline"><a class="tocxref" href="#death-date"><bdi class="secno">4.1.4 </bdi>Death date</a></li><li class="tocline"><a class="tocxref" href="#occupation"><bdi class="secno">4.1.5 </bdi>Occupation</a></li><li class="tocline"><a class="tocxref" href="#birth-place"><bdi class="secno">4.1.6 </bdi>Birth place</a></li><li class="tocline"><a class="tocxref" href="#death-place"><bdi class="secno">4.1.7 </bdi>Death place</a></li></ol></li><li class="tocline"><a class="tocxref" href="#organizations"><bdi class="secno">4.2 </bdi>Organizations</a></li><li class="tocline"><a class="tocxref" href="#locations"><bdi class="secno">4.3 </bdi>Locations</a></li><li class="tocline"><a class="tocxref" href="#time"><bdi class="secno">4.4 </bdi>Time</a></li></ol></li><li class="tocline"><a class="tocxref" href="#Administrative entities and properties"><bdi class="secno">5. </bdi>Administrative entities and properties</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#public-visibility"><bdi class="secno">5.1 </bdi>Public visibility</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#visibility-property"><bdi class="secno">5.1.1 </bdi>Visibility property</a></li><li class="tocline"><a class="tocxref" href="#legal-basis"><bdi class="secno">5.1.2 </bdi>Legal basis</a></li><li class="tocline"><a class="tocxref" href="#data-minimization"><bdi class="secno">5.1.3 </bdi>Data minimization</a></li></ol></li><li class="tocline"><a class="tocxref" href="#data-quality"><bdi class="secno">5.2 </bdi>Data quality</a></li></ol></li><li class="tocline"><a class="tocxref" href="#mappings"><bdi class="secno">6. </bdi>Mappings</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#wikibase-data-model"><bdi class="secno">6.1 </bdi>Wikibase Data Model</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#flexible-data-governance-model"><bdi class="secno">6.1.1 </bdi>Flexible data governance model</a></li></ol></li><li class="tocline"><a class="tocxref" href="#schema-org"><bdi class="secno">6.2 </bdi>Schema.org</a></li><li class="tocline"><a class="tocxref" href="#skos"><bdi class="secno">6.3 </bdi>SKOS</a></li><li class="tocline"><a class="tocxref" href="#cidoc-crm"><bdi class="secno">6.4 </bdi>CIDOC-CRM</a></li><li class="tocline"><a class="tocxref" href="#oslo"><bdi class="secno">6.5 </bdi>OSLO</a></li></ol></li><li class="tocline"><a class="tocxref" href="#references"><bdi class="secno">A. </bdi>References</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#normative-references"><bdi class="secno">A.1 </bdi>Normative references</a></li></ol></li></ol></nav>
     <p>
         This document was created as part of the BELSPO-funded research infrastructure project MetaBelgica.
     </p>
@@ -254,15 +298,39 @@ For semantic interoperability we will use the Resource Description Framework (RD
 Additionally we provide a Wikibase data model as well as a mapping between the RDF data model and the Wikibase data model.</p>
 <p>This document specifies overall considerations about the data model.
 Detailed documentation about the RDF vocabulary is available via the tool Widoco.</p>
-<section id="document-conventions"><div class="header-wrapper"><h3 id="x1-1-document-conventions"><bdi class="secno">1.1 </bdi>Document conventions</h3><a class="self-link" href="#document-conventions" aria-label="Permalink for Section 1.1"></a></div>
-<p>Conformance requirements are expressed with a combination of descriptive assertions and [<cite><a class="bibref" data-link-type="biblio" href="#bib-rfc2119" title="Key words for use in RFCs to Indicate Requirement Levels">RFC2119</a></cite>] terminology. The key words "<em class="rfc2119">MUST</em>", "<em class="rfc2119">MUST NOT</em>", "<em class="rfc2119">REQUIRED</em>", "<em class="rfc2119">SHALL</em>", "<em class="rfc2119">SHALL NOT</em>", "<em class="rfc2119">SHOULD</em>", "<em class="rfc2119">SHOULD NOT</em>", "<em class="rfc2119">RECOMMENDED</em>", "<em class="rfc2119">MAY</em>", and "<em class="rfc2119">OPTIONAL</em>" in the normative parts of this document are to be interpreted as described in RFC 2119. However, for readability, these words do not appear in all uppercase letters in this specification.</p>
+<section id="conformance"><div class="header-wrapper"><h3 id="x1-1-conformance"><bdi class="secno">1.1 </bdi>Conformance</h3><a class="self-link" href="#conformance" aria-label="Permalink for Section 1.1"></a></div><p>As well as sections marked as non-normative, all authoring guidelines, diagrams, examples, and notes in this specification are non-normative. Everything else in this specification is normative.</p><p>
+        The key words <em class="rfc2119">MAY</em>, <em class="rfc2119">MUST</em>, <em class="rfc2119">MUST NOT</em>, <em class="rfc2119">OPTIONAL</em>, <em class="rfc2119">RECOMMENDED</em>, <em class="rfc2119">REQUIRED</em>, <em class="rfc2119">SHALL</em>, <em class="rfc2119">SHALL NOT</em>, <em class="rfc2119">SHOULD</em>, and <em class="rfc2119">SHOULD NOT</em> in this document
+        are to be interpreted as described in
+        <a href="https://www.rfc-editor.org/info/bcp14">BCP 14</a>
+        [<cite><a class="bibref" data-link-type="biblio" href="#bib-rfc2119" title="Key words for use in RFCs to Indicate Requirement Levels">RFC2119</a></cite>] [<cite><a class="bibref" data-link-type="biblio" href="#bib-rfc8174" title="Ambiguity of Uppercase vs Lowercase in RFC 2119 Key Words">RFC8174</a></cite>]
+        when, and only when, they appear in all
+        capitals, as shown here.
+      </p>
+Conformance requirements are expressed with a combination of descriptive assertions and [<cite><a class="bibref" data-link-type="biblio" href="#bib-rfc2119" title="Key words for use in RFCs to Indicate Requirement Levels">RFC2119</a></cite>] terminology. 
+
+<p id="respecRFC2119">The key words 
+  <em class="rfc2119"><em class="rfc2119">MAY</em></em>, 
+  <em class="rfc2119"><em class="rfc2119">MUST</em></em>, 
+  <em class="rfc2119"><em class="rfc2119">MUST NOT</em></em>, 
+  <em class="rfc2119"><em class="rfc2119">REQUIRED</em></em>, 
+  <em class="rfc2119"><em class="rfc2119">SHALL</em></em>, 
+  <em class="rfc2119"><em class="rfc2119">SHALL NOT</em></em>, 
+  <em class="rfc2119"><em class="rfc2119">SHOULD</em></em>, 
+  <em class="rfc2119"><em class="rfc2119">SHOULD NOT</em></em>, 
+  <em class="rfc2119"><em class="rfc2119">RECOMMENDED</em></em>, 
+  <em class="rfc2119"><em class="rfc2119">MAY</em></em>,
+  and <em class="rfc2119"><em class="rfc2119">OPTIONAL</em></em>, 
+  in the normative parts of this document are to be interpreted as described in RFC 2119.
+  However, for readability, these words do not appear in all uppercase letters in this specification.
+</p>
+
 </section></section>
 
 <section id="terminology"><div class="header-wrapper"><h2 id="x2-terminology"><bdi class="secno">2. </bdi>Terminology</h2><a class="self-link" href="#terminology" aria-label="Permalink for Section 2."></a></div>
 <p>Throughout the document, the following terminology is used.</p>
 <dl>
 
-  <dt><dfn id="dfn-alternate-name" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn" class="respec-offending-element" title="Found definition for &quot;alternate-name&quot;, but nothing links to it. This is usually a spec bug!">alternate-name</dfn></dt>
+  <dt><dfn id="dfn-alternate-name" data-plurals="alternate names" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">alternate name</dfn></dt>
   <dd>
     <a data-link-type="dfn|abstract-op" href="#dfn-authority" class="internalDFN" id="ref-for-dfn-authority-2">Authorities</a> (such as persons or organizations) may have several spellings.
     Next to the <a data-link-type="dfn|abstract-op" href="#dfn-preferred-name" class="internalDFN" id="ref-for-dfn-preferred-name-1">preferred-name</a> spelling, alternate names record other possible spellings.
@@ -276,21 +344,36 @@ Detailed documentation about the RDF vocabulary is available via the tool Widoco
     Historically used as a single way to spell something and hence a form of identifier.
   </dd>
 
+  <dt><dfn id="dfn-data-subject" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">data-subject</dfn></dt>
+  <dd>
+    According to the GDPR: ...
+  </dd>
 
   <dt><dfn id="dfn-entity" data-plurals="entities" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">entity</dfn></dt>
   <dd>
+    Todo: definition of an entity
   </dd>
 
-  <dt><dfn id="dfn-isni" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn" class="respec-offending-element" title="Found definition for &quot;ISNI&quot;, but nothing links to it. This is usually a spec bug!">ISNI</dfn></dt>
+  <dt><dfn id="dfn-isni" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">ISNI</dfn></dt>
   <dd>
     The International Standard Name Identifier (ISO 27729) is used to uniquely identify persons and organisations involved in the creation, production, management and distribution of cultural content. ISNI is a unique and permanent 16-digit number.
   </dd>
 
+  <dt><dfn id="dfn-owa" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">OWA</dfn></dt>
+  <dd>
+    The Open World Assumption (OWA) specifies that ...
+  </dd>
 
   <dt><dfn id="dfn-property" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">property</dfn></dt>
   <dd>
     Todo: definition of a property
   </dd>
+
+  <dt><dfn id="dfn-property-instance" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">property instance</dfn></dt>
+  <dd>
+    The usage of a property on an entity, i.e. the value of the property.
+  </dd>
+
 
 
 
@@ -305,7 +388,13 @@ Detailed documentation about the RDF vocabulary is available via the tool Widoco
 
 </dl></section>
 
-<section id="Authority model"><div class="header-wrapper"><h2 id="x3-authority-entities-and-properties"><bdi class="secno">3. </bdi>Authority entities and properties</h2><a class="self-link" href="#Authority model" aria-label="Permalink for Section 3."></a></div>
+<section id="Requirements"><div class="header-wrapper"><h2 id="x3-requirements"><bdi class="secno">3. </bdi>Requirements</h2><a class="self-link" href="#Requirements" aria-label="Permalink for Section 3."></a></div>
+<p>MetaBelgica</p>
+<p>Collaboratively maintained</p>
+<p>Public interface</p>
+</section>
+
+<section id="Authority model"><div class="header-wrapper"><h2 id="x4-authority-entities-and-properties"><bdi class="secno">4. </bdi>Authority entities and properties</h2><a class="self-link" href="#Authority model" aria-label="Permalink for Section 4."></a></div>
 <p>Within MetaBelgica we maintain <a data-link-type="dfn|abstract-op" href="#dfn-authority" class="internalDFN" id="ref-for-dfn-authority-3">authorities</a>, represented as <a data-link-type="dfn|abstract-op" href="#dfn-entity" class="internalDFN" id="ref-for-dfn-entity-1">entities</a> that are interlinked.
 Generally we distinguish the following three types of entities and additionally have the concept of time represented as <a data-link-type="dfn|abstract-op" href="#dfn-property" class="internalDFN" id="ref-for-dfn-property-1">property</a>.</p>
 <ol>
@@ -315,110 +404,225 @@ Generally we distinguish the following three types of entities and additionally 
 </ol>
 <p>In the following we elaborate on the different entities and properties.</p>
 <p>Similarly, organizations will be linked to locations to indicate where an organiation is established.</p>
-<p>Each of these entities has a number of properties such as related dates, but most importantly external identifiers to other reliable databases.</p>
-<p>Todo: elaborate</p>
-<section id="persons"><div class="header-wrapper"><h3 id="x3-1-persons"><bdi class="secno">3.1 </bdi>Persons</h3><a class="self-link" href="#persons" aria-label="Permalink for Section 3.1"></a></div>
-<p>We refer to persons as the creators or in other form contributors to cultural content.
+<p>Each of these entities has a number of properties such as related dates, but most importantly external identifiers to other reliable databases like <a data-link-type="dfn|abstract-op" href="#dfn-isni" class="internalDFN" id="ref-for-dfn-isni-1">ISNI</a>.</p>
+<p>This data model follows the Open World Assumption (<a data-link-type="dfn|abstract-op" href="#dfn-owa" class="internalDFN" id="ref-for-dfn-owa-1">OWA</a>), hence a missing property does not mean that it does not exist,
+just that it is not known.
+For example, in cases where we do not know if a person is dead, we do not indicate "unknown" or something similar, we rather leave the property empty.</p>
+<section id="persons"><div class="header-wrapper"><h3 id="x4-1-persons"><bdi class="secno">4.1 </bdi>Persons</h3><a class="self-link" href="#persons" aria-label="Permalink for Section 4.1"></a></div>
+<p>Persons are the creators or in other form contributors to cultural content.
 More specifically a person within MetaBelgica can also be a public identity such as a pseudonym.</p>
 <p>Our goal is to provide high quality reference data which requires a disambiguation of persons.
 Hence we define a number of properties that help to distinguish persons among each other.
 In other words, two persons with the same name can still be distinguished by other additional properties.</p>
-<section id="preferred-name-spelling"><div class="header-wrapper"><h4 id="x3-1-1-preferred-name-spelling"><bdi class="secno">3.1.1 </bdi>Preferred name spelling</h4><a class="self-link" href="#preferred-name-spelling" aria-label="Permalink for Section 3.1.1"></a></div>
-<p>Historically, <a data-link-type="dfn|abstract-op" href="#dfn-authority" class="internalDFN" id="ref-for-dfn-authority-4">authority</a> data used a single name to uniquely refer to it, hence as a sort of identifier.
+<section id="preferred-name-spelling"><div class="header-wrapper"><h4 id="x4-1-1-preferred-name-spelling"><bdi class="secno">4.1.1 </bdi>Preferred name spelling</h4><a class="self-link" href="#preferred-name-spelling" aria-label="Permalink for Section 4.1.1"></a></div>
+<p>Historically, in <a data-link-type="dfn|abstract-op" href="#dfn-authority" class="internalDFN" id="ref-for-dfn-authority-4">authority</a> control, a single uniform name was used to uniquely identify an authority record, hence the name as a sort of identifier.
 Instead of by name, we use a unique and persistent identifier to refer to persons.
 Nevertheless, we still use the preferred name spelling as the preferred label of a person.</p>
 <ul>
-<li>Each person <code>must</code> have at least one preferred name</li>
-<li>Each person <code>may</code> have one preferred name per language. This supports for example multilingual interfaces to consult the record.</li>
-<li>A preferred name <code>must</code> be comprised of unicode characters. This supports multilingual use cases in which different alphabets need to be supported.</li>
+<li>A person <em class="rfc2119"><em class="rfc2119">MUST</em></em> have at least one preferred name</li>
+<li>A person <em class="rfc2119"><em class="rfc2119">MAY</em></em> have one preferred name per language. This supports for example multilingual interfaces to consult the record.</li>
+<li>A preferred name <em class="rfc2119"><em class="rfc2119">MUST</em></em> be comprised of unicode characters and cannot be empty. This supports multilingual use cases in which different alphabets need to be supported.</li>
+<li>A preferred name <em class="rfc2119"><em class="rfc2119">MAY</em></em> be annotated with a language.</li>
+<li>The language of a preferred name or alternate name <em class="rfc2119"><em class="rfc2119">MUST</em></em> be annotated with language tags according to [<cite><a class="bibref" data-link-type="biblio" href="#bib-rfc5646" title="Tags for Identifying Languages">RFC5646</a></cite>].</li>
 </ul>
-</section><section id="alternate-names"><div class="header-wrapper"><h4 id="x3-1-2-alternate-names"><bdi class="secno">3.1.2 </bdi>Alternate names</h4><a class="self-link" href="#alternate-names" aria-label="Permalink for Section 3.1.2"></a></div>
-</section><section id="birth-date"><div class="header-wrapper"><h4 id="x3-1-3-birth-date"><bdi class="secno">3.1.3 </bdi>Birth date</h4><a class="self-link" href="#birth-date" aria-label="Permalink for Section 3.1.3"></a></div>
-</section><section id="death-date"><div class="header-wrapper"><h4 id="x3-1-4-death-date"><bdi class="secno">3.1.4 </bdi>Death date</h4><a class="self-link" href="#death-date" aria-label="Permalink for Section 3.1.4"></a></div>
-</section><section id="occupation"><div class="header-wrapper"><h4 id="x3-1-5-occupation"><bdi class="secno">3.1.5 </bdi>Occupation</h4><a class="self-link" href="#occupation" aria-label="Permalink for Section 3.1.5"></a></div>
-</section><section id="birth-place"><div class="header-wrapper"><h4 id="x3-1-6-birth-place"><bdi class="secno">3.1.6 </bdi>Birth place</h4><a class="self-link" href="#birth-place" aria-label="Permalink for Section 3.1.6"></a></div>
+</section><section id="alternate-names"><div class="header-wrapper"><h4 id="x4-1-2-alternate-names"><bdi class="secno">4.1.2 </bdi>Alternate names</h4><a class="self-link" href="#alternate-names" aria-label="Permalink for Section 4.1.2"></a></div>
+<p>Names might be spelled differently in other languages, there might be recorded nicknames or aliases.
+As mentioned above, historically a single uniform name was chosen as preferred name spelling. 
+Other spellings were recorded as well to improve information retrieval.</p>
+<ul>
+<li>A person <em class="rfc2119"><em class="rfc2119">MAY</em></em> have zero or more <a data-link-type="dfn|abstract-op" href="#dfn-alternate-name" class="internalDFN" id="ref-for-dfn-alternate-name-1">alternate names</a></li>
+<li>An alternate name <em class="rfc2119"><em class="rfc2119">MUST</em></em> be comprised of unicode characters and cannot be empty. This supports multilingual use cases in which different alphabets need to be supported.</li>
+</ul>
+</section><section id="birth-date"><div class="header-wrapper"><h4 id="x4-1-3-birth-date"><bdi class="secno">4.1.3 </bdi>Birth date</h4><a class="self-link" href="#birth-date" aria-label="Permalink for Section 4.1.3"></a></div>
+<p>This is the recorded date of birth of a person according to the Gregorian calender.</p>
+<ul>
+<li>The birth date <em class="rfc2119"><em class="rfc2119">MUST</em></em> be indicated by using [<cite><a class="bibref" data-link-type="biblio" href="#bib-iso8601:2019-1" title="Date and time — Representations for information interchange — Part 1: Basic rules. ISO 8601-1:2019.">ISO8601:2019-1</a></cite>] or its extension for uncertain dates [<cite><a class="bibref" data-link-type="biblio" href="#bib-iso8601:2019-2" title="Date and time — Representations for information interchange — Part 2: Extensions. ISO 8601-2:2019.">ISO8601:2019-2</a></cite>].</li>
+</ul>
+<div class="note" role="note" id="issue-container-generatedID"><div role="heading" class="note-title marker" id="h-note" aria-level="5"><span>Note</span><span class="issue-label">: ISO8601:2019 extension for uncertain dates is used</span></div><p class="">
+We allow dates according to the ISO8601:2019 extension [<cite><a class="bibref" data-link-type="biblio" href="#bib-iso8601:2019-2" title="Date and time — Representations for information interchange — Part 2: Extensions. ISO 8601-2:2019.">ISO8601:2019-2</a></cite>] that is based on the Extended Date Time Format (EDTF) from the Library of Congress.
+This allows to also record uncertain dates in various ways.
+</p></div>
+
+</section><section id="death-date"><div class="header-wrapper"><h4 id="x4-1-4-death-date"><bdi class="secno">4.1.4 </bdi>Death date</h4><a class="self-link" href="#death-date" aria-label="Permalink for Section 4.1.4"></a></div>
+<p>This is the recorded date of death of a person according to the Gregorian calender.</p>
+<ul>
+<li>The death date <em class="rfc2119"><em class="rfc2119">MUST</em></em> be indicated by using [<cite><a class="bibref" data-link-type="biblio" href="#bib-iso8601:2019-1" title="Date and time — Representations for information interchange — Part 1: Basic rules. ISO 8601-1:2019.">ISO8601:2019-1</a></cite>] or its extension for uncertain dates [<cite><a class="bibref" data-link-type="biblio" href="#bib-iso8601:2019-2" title="Date and time — Representations for information interchange — Part 2: Extensions. ISO 8601-2:2019.">ISO8601:2019-2</a></cite>].</li>
+</ul>
+</section><section id="occupation"><div class="header-wrapper"><h4 id="x4-1-5-occupation"><bdi class="secno">4.1.5 </bdi>Occupation</h4><a class="self-link" href="#occupation" aria-label="Permalink for Section 4.1.5"></a></div>
+<p>This is the occupation of a person according to a controlled vocabulary.</p>
+<ul>
+<li>A person <em class="rfc2119"><em class="rfc2119">MAY</em></em> have zero or more occupations.</li>
+</ul>
+</section><section id="birth-place"><div class="header-wrapper"><h4 id="x4-1-6-birth-place"><bdi class="secno">4.1.6 </bdi>Birth place</h4><a class="self-link" href="#birth-place" aria-label="Permalink for Section 4.1.6"></a></div>
 <p>This property links a person to an <a data-link-type="dfn|abstract-op" href="#dfn-entity" class="internalDFN" id="ref-for-dfn-entity-2">entity</a> of type Location (see definition below).</p>
-</section><section id="death-place"><div class="header-wrapper"><h4 id="x3-1-7-death-place"><bdi class="secno">3.1.7 </bdi>Death place</h4><a class="self-link" href="#death-place" aria-label="Permalink for Section 3.1.7"></a></div>
-</section></section><section id="organizations"><div class="header-wrapper"><h3 id="x3-2-organizations"><bdi class="secno">3.2 </bdi>Organizations</h3><a class="self-link" href="#organizations" aria-label="Permalink for Section 3.2"></a></div>
-</section><section id="locations"><div class="header-wrapper"><h3 id="x3-3-locations"><bdi class="secno">3.3 </bdi>Locations</h3><a class="self-link" href="#locations" aria-label="Permalink for Section 3.3"></a></div>
-</section><section id="time"><div class="header-wrapper"><h3 id="x3-4-time"><bdi class="secno">3.4 </bdi>Time</h3><a class="self-link" href="#time" aria-label="Permalink for Section 3.4"></a></div>
+</section><section id="death-place"><div class="header-wrapper"><h4 id="x4-1-7-death-place"><bdi class="secno">4.1.7 </bdi>Death place</h4><a class="self-link" href="#death-place" aria-label="Permalink for Section 4.1.7"></a></div>
+<p>This property links a person to an <a data-link-type="dfn|abstract-op" href="#dfn-entity" class="internalDFN" id="ref-for-dfn-entity-3">entity</a> of type Location (see definition below).</p>
+</section></section><section id="organizations"><div class="header-wrapper"><h3 id="x4-2-organizations"><bdi class="secno">4.2 </bdi>Organizations</h3><a class="self-link" href="#organizations" aria-label="Permalink for Section 4.2"></a></div>
+<p>Todo</p>
+</section><section id="locations"><div class="header-wrapper"><h3 id="x4-3-locations"><bdi class="secno">4.3 </bdi>Locations</h3><a class="self-link" href="#locations" aria-label="Permalink for Section 4.3"></a></div>
+<p>Todo</p>
+</section><section id="time"><div class="header-wrapper"><h3 id="x4-4-time"><bdi class="secno">4.4 </bdi>Time</h3><a class="self-link" href="#time" aria-label="Permalink for Section 4.4"></a></div>
 <p>This concept is not an entity on its own, but modelled as a property.</p>
 </section></section>
 
-<section id="Administrative entities and properties"><div class="header-wrapper"><h2 id="x4-administrative-entities-and-properties"><bdi class="secno">4. </bdi>Administrative entities and properties</h2><a class="self-link" href="#Administrative entities and properties" aria-label="Permalink for Section 4."></a></div>
+<section id="Administrative entities and properties"><div class="header-wrapper"><h2 id="x5-administrative-entities-and-properties"><bdi class="secno">5. </bdi>Administrative entities and properties</h2><a class="self-link" href="#Administrative entities and properties" aria-label="Permalink for Section 5."></a></div>
 <p>Within MetaBelgica we collaboratively maintain <a data-link-type="dfn|abstract-op" href="#dfn-authority" class="internalDFN" id="ref-for-dfn-authority-5">authority</a> data which requires a data governance strategy.
-In order to support data governance aspects, we define additional administrative entities.</p>
-<section id="administrative-entities"><div class="header-wrapper"><h3 id="x4-1-administrative-entities"><bdi class="secno">4.1 </bdi>Administrative entities</h3><a class="self-link" href="#administrative-entities" aria-label="Permalink for Section 4.1"></a></div>
-</section><section id="administrative-properties"><div class="header-wrapper"><h3 id="x4-2-administrative-properties"><bdi class="secno">4.2 </bdi>Administrative properties</h3><a class="self-link" href="#administrative-properties" aria-label="Permalink for Section 4.2"></a></div>
-<section id="visibility"><div class="header-wrapper"><h4 id="x4-2-1-visibility"><bdi class="secno">4.2.1 </bdi>Visibility</h4><a class="self-link" href="#visibility" aria-label="Permalink for Section 4.2.1"></a></div>
+In order to support data governance aspects, we define additional administrative entities and properties.
+How these entities and properties can be used in the Wikibase to on the one hand indicate data governance aspects such as what can be shown publicly and on the other hand enforce it, will be discussed in the following section <a href="#mappings">mappings</a>.</p>
+<p>The Data Privacy Vocabulary [<cite><a class="bibref" data-link-type="biblio" href="#bib-dpv" title="Data Privcay Vocabulary (DPV), version 2.1">DPV</a></cite>] provides an extensive data model to cover many legal and practical aspects of data processing. For simplicity we only specify entities and properties needed for our use case, but we aim to reuse existing [<cite><a class="bibref" data-link-type="biblio" href="#bib-dpv" title="Data Privcay Vocabulary (DPV), version 2.1">DPV</a></cite>] terms as much as possible and align own terms to ensure compatibility.</p>
+<p>Todo: mention DPV concepts</p>
+<section id="public-visibility"><div class="header-wrapper"><h3 id="x5-1-public-visibility"><bdi class="secno">5.1 </bdi>Public visibility</h3><a class="self-link" href="#public-visibility" aria-label="Permalink for Section 5.1"></a></div>
 <p>One goal of MetaBelgica is to provide its reference data to the public.
 However, certain entities or properties should not be made openly available.</p>
-<p>We employ a visibility property to indicate the envisioned target audience. 
+<p>On the one hand we indicate if a an entity or property should be shown publicly by using a <code>visibility</code> property,
+and on the other hand we indicate the reason why with a property <code>legal ground</code>.</p>
+<section id="visibility-property"><div class="header-wrapper"><h4 id="x5-1-1-visibility-property"><bdi class="secno">5.1.1 </bdi>Visibility property</h4><a class="self-link" href="#visibility-property" aria-label="Permalink for Section 5.1.1"></a></div>
+<p>We employ the property <code>visibility</code> to indicate the envisioned target audience. 
 In MetaBelgica we distinguish between the following three use cases:</p>
 <ol>
-<li><code>internal</code>: An entity/property is only meant to be used internally </li>
-<li><code>shared</code>: An entity/property can be shared in a research context and in the frame of a data sharing agreement</li>
-<li><code>public</code>: An entity/property is meant to be displayed publicly</li>
+<li><code>internal</code>: An entity/property is only meant to be used internally, one example are other administrative properties</li>
+<li><code>shared</code>: An entity/property can be shared in a research context and in the frame of a data sharing agreement with a trusted partner, one example is sensitive data such as gender information</li>
+<li><code>public</code>: An entity/property is meant to be displayed publicly, one example is the name of a person record</li>
 </ol>
-<div class="note" role="note" id="issue-container-generatedID"><div role="heading" class="note-title marker" id="h-note" aria-level="5"><span>Note</span><span class="issue-label">: Visibility is merely an annotation</span></div><p class="">
+<div class="note" role="note" id="issue-container-generatedID-0"><div role="heading" class="note-title marker" id="h-note-0" aria-level="5"><span>Note</span><span class="issue-label">: Visibility is merely an annotation</span></div><p class="">
 Indicating a visibility is merely an annotation, you (or the software using the data) still need to use this annotation and act/filter accordingly!
 </p></div>
 
-<p>The visibility property can be used to either annotate an entity or a property.
-Entities annotated with <code>internal</code> or <code>shared</code> <code>must not</code> be shown publicly.</p>
+
+<p>The visibility property <em class="rfc2119"><em class="rfc2119">MUST</em> BE</em> applicable to annotate a whole entity, a whole property or a specific <a data-link-type="dfn|abstract-op" href="#dfn-property-instance" class="internalDFN" id="ref-for-dfn-property-instance-1">property instance</a>.
+Entities annotated with <code>internal</code> or <code>shared</code> <em class="rfc2119"><em class="rfc2119">MUST NOT</em></em> be shown publicly.
+Entities annotated with <code>internal</code> <em class="rfc2119"><em class="rfc2119">MUST NOT</em></em> be shared with third-parties.</p>
 <p>An entity may have several properties, in case the entity itself has the visibility <code>public</code>,
 but one of the used properties has the visibility <code>internal</code> or <code>shared</code>,
-then those property values <code>must not</code> be shown publicly.</p>
+then those property values <em class="rfc2119"><em class="rfc2119">MUST NOT</em></em> be shown publicly.</p>
 <p class="informative" title="Note: annotation">
 For example, the property <code>gender</code> has the visibility <code>shared</code>, hence all person entities with visibility <code>public</code> may be displayed publicly, but the value of the gender property <code>shall not</code> be shown.
 </p>
 
+</section><section id="legal-basis"><div class="header-wrapper"><h4 id="x5-1-2-legal-basis"><bdi class="secno">5.1.2 </bdi>Legal basis</h4><a class="self-link" href="#legal-basis" aria-label="Permalink for Section 5.1.2"></a></div>
+<p>We employ the property <code>legal basis</code> to qualify why an entity, a property or a <a data-link-type="dfn|abstract-op" href="#dfn-property-instance" class="internalDFN" id="ref-for-dfn-property-instance-2">property instance</a> has a certain visibility.</p>
+<p>There property <code>legal basis</code> <em class="rfc2119"><em class="rfc2119">MUST</em></em> link to one of the following legal basis (future versions of this specification may extend this list):</p>
+<ul>
+<li><code>Freedom of Information</code>: Used to indicate that an entity, property or property value should be publicly visible. Based on Belgian law, covering the access of administrative documents held by public bodies.</li>
+<li><code>Deceased</code>: Used to indicate that all personal data can be publicly visible, GDPR no longer applies</li>
+<li><code>Consent</code>: Used to indicate that something can be publicly visible, because the person described by the record (<a data-link-type="dfn|abstract-op" href="#dfn-data-subject" class="internalDFN" id="ref-for-dfn-data-subject-1">data-subject</a>) provided consent to display the property value.</li>
+<li><code>Opt-out</code>: Used to indicate that something must not be publicly visible, because the person described by the record (<a data-link-type="dfn|abstract-op" href="#dfn-data-subject" class="internalDFN" id="ref-for-dfn-data-subject-2">data-subject</a>) opted out.</li>
+<li><code>Sensitive data</code>: Used to indicate that a property or property value should not be publicly visible as it is sensitive data which also due to data minimization must not be made publicly visible.</li>
+</ul>
+<p>When the legal basis <code>Consent</code> is used, there <em class="rfc2119"><em class="rfc2119">MUST</em></em> be a link to a <code>Consent</code> entity that provides further details about the consent.</p>
+<p>The following default values apply, for example for the initial bulk-load from MetaBelgica partners.</p>
+<ul>
+<li>The default legal basis for living persons is <code>Freedom of Information</code>.</li>
+<li>The default legal basis for persons with a known death date is <code>Deceased</code></li>
+</ul>
+</section><section id="data-minimization"><div class="header-wrapper"><h4 id="x5-1-3-data-minimization"><bdi class="secno">5.1.3 </bdi>Data minimization</h4><a class="self-link" href="#data-minimization" aria-label="Permalink for Section 5.1.3"></a></div>
+<p>With respect to GDPR's data minimization, certain data should be adapted.
+Todo: elaborate</p>
+<ul>
+<li>The default annotation <code>yearOnly</code> <em class="rfc2119"><em class="rfc2119">MUST</em></em> be applied to the year of birth.</li>
+</ul>
+</section></section><section id="data-quality"><div class="header-wrapper"><h3 id="x5-2-data-quality"><bdi class="secno">5.2 </bdi>Data quality</h3><a class="self-link" href="#data-quality" aria-label="Permalink for Section 5.2"></a></div>
+</section></section>
 
-</section><section id="person-record-category"><div class="header-wrapper"><h4 id="x4-2-2-person-record-category"><bdi class="secno">4.2.2 </bdi>Person record category</h4><a class="self-link" href="#person-record-category" aria-label="Permalink for Section 4.2.2"></a></div>
-<ol>
-<li>Deceased person</li>
-<li>Minor</li>
-<li>...</li>
-<li>Public figure</li>
-</ol>
-</section></section></section>
-
-<section id="mappings"><div class="header-wrapper"><h2 id="x5-mappings"><bdi class="secno">5. </bdi>Mappings</h2><a class="self-link" href="#mappings" aria-label="Permalink for Section 5."></a></div>
+<section id="mappings"><div class="header-wrapper"><h2 id="x6-mappings"><bdi class="secno">6. </bdi>Mappings</h2><a class="self-link" href="#mappings" aria-label="Permalink for Section 6."></a></div>
 <p>For interoperability we provide a number of mappings to different RDF vocabularies, but also to the used Wikbiase data model.
 We have the intention to provide data of the MetaBelgica platform in different data formats, based on the following mappings.</p>
-<section id="wikibase-data-model"><div class="header-wrapper"><h3 id="x5-1-wikibase-data-model"><bdi class="secno">5.1 </bdi>Wikibase Data Model</h3><a class="self-link" href="#wikibase-data-model" aria-label="Permalink for Section 5.1"></a></div>
+<section id="wikibase-data-model"><div class="header-wrapper"><h3 id="x6-1-wikibase-data-model"><bdi class="secno">6.1 </bdi>Wikibase Data Model</h3><a class="self-link" href="#wikibase-data-model" aria-label="Permalink for Section 6.1"></a></div>
 <p>Todo: Wikibase data model</p>
-</section><section id="schema-org"><div class="header-wrapper"><h3 id="x5-2-schema-org"><bdi class="secno">5.2 </bdi>Schema.org</h3><a class="self-link" href="#schema-org" aria-label="Permalink for Section 5.2"></a></div>
+<section id="flexible-data-governance-model"><div class="header-wrapper"><h4 id="x6-1-1-flexible-data-governance-model"><bdi class="secno">6.1.1 </bdi>Flexible data governance model</h4><a class="self-link" href="#flexible-data-governance-model" aria-label="Permalink for Section 6.1.1"></a></div>
+<p>The conceptual MetaBelgica data model, implemented as Wikibase entities and properties, can be used to support various data governance use cases.
+It can be used in a consistent way and only relies on the properties <code>visibility</code>, <code>applies To</code> and <code>legal ground</code>, optionally with <code>start date</code> and <code>end date</code>.</p>
+<p>The following use cases are supported which means that even fine-grained control is possible:</p>
+<ol>
+<li><em>Display entity</em> publicly</li>
+<li><em>Display property for entities</em> publicly</li>
+<li><em>Do not display entity</em> publicly</li>
+<li><em>Do not display property on entities</em> publicly</li>
+<li><em>Opt-in to display entity</em> publicly</li>
+<li><em>Opt-in to display property for specific entity</em> publicly</li>
+<li><em>Opt-out to display entity</em> publicly</li>
+<li><em>Opt-out to display property for specific entity</em> publicly</li>
+</ol>
+<p>Additionally, the Wikibase data model can be used to annotate provenance about the visibility with a <code>legal ground</code> property when used as a qualifier.
+Therefore it will be documented <em>why</em> something is public or not and when using start and end date qualifiers, a whole provenance record can be built.
+Useful to indicate if a certain opt-in only occurred at some point in time or to indicate from when an opt-out was requested.</p>
+<aside class="example" id="example-visibility-annotation"><div class="marker">
+    <a class="self-link" href="#example-visibility-annotation">Example<bdi> 1</bdi></a><span class="example-title">: Visibility annotation</span>
+  </div>
+<p>=== Q123 (John) ===<br>
+-&gt; visibility (P101) = public (Q101)<br>
+  qualifier: appliesTo (P102) = gender (P111)<br>
+  qualifier: legalGround (P103) = opt-inJohn (Q222)<br>
+</p>
+
+<p>=== Q123 (John) ===<br>
+-&gt; visibility (P101) = public (Q101)<br>
+  qualifier: appliesTo (P102) = occupation (P111)<br>
+  qualifier: legalGround (P103) = opt-inJohn (Q222)<br>
+</p>
+
+<p>-&gt; visibility (P101) = public (Q101)
+  qualifier: appliesTo (P102) = whole entity (Q102)
+  qualifier: legalGround (P103) = public figure (Q111)</p>
+<p></p>
+</aside>
+
+<div class="note" role="note" id="issue-container-generatedID-1"><div role="heading" class="note-title marker" id="h-note-1" aria-level="5"><span>Note</span><span class="issue-label">: Why is visibility a claim and not a qualifier</span></div><p class="">
+Placing the visibility property directly on the property that is annotated seems intuitive,
+but then the additional legal ground would qualify the property and not the visibility.
+Additionally, the history of data governance with start and end dates cannot be modeled.
+Yet when using using the visibility property as a claim, additional metadata like
+the legal ground and possible start and end dates can be consistently modeled with qualifiers.
+</p></div>
+
+
+
+</section></section><section id="schema-org"><div class="header-wrapper"><h3 id="x6-2-schema-org"><bdi class="secno">6.2 </bdi>Schema.org</h3><a class="self-link" href="#schema-org" aria-label="Permalink for Section 6.2"></a></div>
 <p>Todo: Schema.org mapping</p>
-</section><section id="skos"><div class="header-wrapper"><h3 id="x5-3-skos"><bdi class="secno">5.3 </bdi>SKOS</h3><a class="self-link" href="#skos" aria-label="Permalink for Section 5.3"></a></div>
+<p>mb:legalDeposit a dpv:LegalBasis ;
+                dpv:hasJurisdiction yy ;
+                dpv:hasLaw xx .</p>
+</section><section id="skos"><div class="header-wrapper"><h3 id="x6-3-skos"><bdi class="secno">6.3 </bdi>SKOS</h3><a class="self-link" href="#skos" aria-label="Permalink for Section 6.3"></a></div>
 <p>Todo: SKOS mapping</p>
-</section><section id="cidoc-crm"><div class="header-wrapper"><h3 id="x5-4-cidoc-crm"><bdi class="secno">5.4 </bdi>CIDOC-CRM</h3><a class="self-link" href="#cidoc-crm" aria-label="Permalink for Section 5.4"></a></div>
+</section><section id="cidoc-crm"><div class="header-wrapper"><h3 id="x6-4-cidoc-crm"><bdi class="secno">6.4 </bdi>CIDOC-CRM</h3><a class="self-link" href="#cidoc-crm" aria-label="Permalink for Section 6.4"></a></div>
 <p>Todo: CIDOC-CRM mapping</p>
-</section><section id="oslo"><div class="header-wrapper"><h3 id="x5-5-oslo"><bdi class="secno">5.5 </bdi>OSLO</h3><a class="self-link" href="#oslo" aria-label="Permalink for Section 5.5"></a></div>
+</section><section id="oslo"><div class="header-wrapper"><h3 id="x6-5-oslo"><bdi class="secno">6.5 </bdi>OSLO</h3><a class="self-link" href="#oslo" aria-label="Permalink for Section 6.5"></a></div>
 <p>Todo: OSLO mapping</p>
 </section></section>
 
 
 
-<section id="references" class="appendix"><div class="header-wrapper"><h2 id="a-references"><bdi class="secno">A. </bdi>References</h2><a class="self-link" href="#references" aria-label="Permalink for Appendix A."></a></div><section id="informative-references"><div class="header-wrapper"><h3 id="a-1-informative-references"><bdi class="secno">A.1 </bdi>Informative references</h3><a class="self-link" href="#informative-references" aria-label="Permalink for Appendix A.1"></a></div>
+<section id="references" class="appendix"><div class="header-wrapper"><h2 id="a-references"><bdi class="secno">A. </bdi>References</h2><a class="self-link" href="#references" aria-label="Permalink for Appendix A."></a></div><section id="normative-references"><div class="header-wrapper"><h3 id="a-1-normative-references"><bdi class="secno">A.1 </bdi>Normative references</h3><a class="self-link" href="#normative-references" aria-label="Permalink for Appendix A.1"></a></div>
     
-    <dl class="bibliography"><dt id="bib-marc21aut">[MARC21Aut]</dt><dd>
+    <dl class="bibliography"><dt id="bib-dpv">[DPV]</dt><dd>
+      <a href="https://w3c.github.io/dpv/2.1/dpv/"><cite>Data Privcay Vocabulary (DPV), version 2.1</cite></a>.  W3C Data Privacy Vocabularies and Contorls Community Group (DPVCG). URL: <a href="https://w3c.github.io/dpv/2.1/dpv/">https://w3c.github.io/dpv/2.1/dpv/</a>
+    </dd><dt id="bib-iso8601:2019-1">[ISO8601:2019-1]</dt><dd>
+      <a href="https://www.iso.org/standard/70907.html"><cite>Date and time — Representations for information interchange — Part 1: Basic rules. ISO 8601-1:2019.</cite></a>.  International Organization for Standardization (ISO). 2019. ISO 8601-1:2019. URL: <a href="https://www.iso.org/standard/70907.html">https://www.iso.org/standard/70907.html</a>
+    </dd><dt id="bib-iso8601:2019-2">[ISO8601:2019-2]</dt><dd>
+      <a href="https://www.iso.org/standard/70908.html"><cite>Date and time — Representations for information interchange — Part 2: Extensions. ISO 8601-2:2019.</cite></a>.  International Organization for Standardization (ISO). 2019. ISO 8601-2:2019. URL: <a href="https://www.iso.org/standard/70908.html">https://www.iso.org/standard/70908.html</a>
+    </dd><dt id="bib-marc21aut">[MARC21Aut]</dt><dd>
       <a href="https://www.loc.gov/marc/authority/"><cite>MARC21 Format for Authority Data</cite></a>.  Library of Congress (United States). URL: <a href="https://www.loc.gov/marc/authority/">https://www.loc.gov/marc/authority/</a>
     </dd><dt id="bib-rfc2119">[RFC2119]</dt><dd>
       <a href="https://www.rfc-editor.org/rfc/rfc2119"><cite>Key words for use in RFCs to Indicate Requirement Levels</cite></a>. S. Bradner.  IETF. March 1997. Best Current Practice. URL: <a href="https://www.rfc-editor.org/rfc/rfc2119">https://www.rfc-editor.org/rfc/rfc2119</a>
+    </dd><dt id="bib-rfc5646">[RFC5646]</dt><dd>
+      <a href="https://www.rfc-editor.org/rfc/rfc5646"><cite>Tags for Identifying Languages</cite></a>. A. Phillips, Ed.; M. Davis, Ed. IETF. September 2009. Best Current Practice. URL: <a href="https://www.rfc-editor.org/rfc/rfc5646">https://www.rfc-editor.org/rfc/rfc5646</a>
+    </dd><dt id="bib-rfc8174">[RFC8174]</dt><dd>
+      <a href="https://www.rfc-editor.org/rfc/rfc8174"><cite>Ambiguity of Uppercase vs Lowercase in RFC 2119 Key Words</cite></a>. B. Leiba.  IETF. May 2017. Best Current Practice. URL: <a href="https://www.rfc-editor.org/rfc/rfc8174">https://www.rfc-editor.org/rfc/rfc8174</a>
     </dd></dl>
   </section></section><p role="navigation" id="back-to-top">
     <a href="#title"><abbr title="Back to Top">↑</abbr></a>
-  </p><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-alternate-name" aria-label="Links in this document to definition: alternate-name">
+  </p><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-alternate-name" aria-label="Links in this document to definition: alternate name">
       <span class="caret"></span>
       <div>
-        <a class="self-link" href="#dfn-alternate-name" aria-label="Permalink for definition: alternate-name. Activate to close this dialog.">Permalink</a>
+        <a class="self-link" href="#dfn-alternate-name" aria-label="Permalink for definition: alternate name. Activate to close this dialog.">Permalink</a>
          
       </div>
       <p><b>Referenced in:</b></p>
       <ul>
-      <li>Not referenced in this document.</li>
-    </ul>
+    <li>
+      <a href="#ref-for-dfn-alternate-name-1" title="§ 4.1.2 Alternate names">§ 4.1.2 Alternate names</a> 
+    </li>
+  </ul>
     </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-authority" aria-label="Links in this document to definition: authority">
       <span class="caret"></span>
       <div>
@@ -432,11 +636,23 @@ We have the intention to provide data of the MetaBelgica platform in different d
     </li><li>
       <a href="#ref-for-dfn-authority-2" title="§ 2. Terminology">§ 2. Terminology</a> 
     </li><li>
-      <a href="#ref-for-dfn-authority-3" title="§ 3. Authority entities and properties">§ 3. Authority entities and properties</a> 
+      <a href="#ref-for-dfn-authority-3" title="§ 4. Authority entities and properties">§ 4. Authority entities and properties</a> 
     </li><li>
-      <a href="#ref-for-dfn-authority-4" title="§ 3.1.1 Preferred name spelling">§ 3.1.1 Preferred name spelling</a> 
+      <a href="#ref-for-dfn-authority-4" title="§ 4.1.1 Preferred name spelling">§ 4.1.1 Preferred name spelling</a> 
     </li><li>
-      <a href="#ref-for-dfn-authority-5" title="§ 4. Administrative entities and properties">§ 4. Administrative entities and properties</a> 
+      <a href="#ref-for-dfn-authority-5" title="§ 5. Administrative entities and properties">§ 5. Administrative entities and properties</a> 
+    </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-data-subject" aria-label="Links in this document to definition: data-subject">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-data-subject" aria-label="Permalink for definition: data-subject. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+      <a href="#ref-for-dfn-data-subject-1" title="§ 5.1.2 Legal basis">§ 5.1.2 Legal basis</a> <a href="#ref-for-dfn-data-subject-2" title="Reference 2">(2)</a> 
     </li>
   </ul>
     </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-entity" aria-label="Links in this document to definition: entity">
@@ -448,9 +664,11 @@ We have the intention to provide data of the MetaBelgica platform in different d
       <p><b>Referenced in:</b></p>
       <ul>
     <li>
-      <a href="#ref-for-dfn-entity-1" title="§ 3. Authority entities and properties">§ 3. Authority entities and properties</a> 
+      <a href="#ref-for-dfn-entity-1" title="§ 4. Authority entities and properties">§ 4. Authority entities and properties</a> 
     </li><li>
-      <a href="#ref-for-dfn-entity-2" title="§ 3.1.6 Birth place">§ 3.1.6 Birth place</a> 
+      <a href="#ref-for-dfn-entity-2" title="§ 4.1.6 Birth place">§ 4.1.6 Birth place</a> 
+    </li><li>
+      <a href="#ref-for-dfn-entity-3" title="§ 4.1.7 Death place">§ 4.1.7 Death place</a> 
     </li>
   </ul>
     </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-isni" aria-label="Links in this document to definition: ISNI">
@@ -461,8 +679,22 @@ We have the intention to provide data of the MetaBelgica platform in different d
       </div>
       <p><b>Referenced in:</b></p>
       <ul>
-      <li>Not referenced in this document.</li>
-    </ul>
+    <li>
+      <a href="#ref-for-dfn-isni-1" title="§ 4. Authority entities and properties">§ 4. Authority entities and properties</a> 
+    </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-owa" aria-label="Links in this document to definition: OWA">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-owa" aria-label="Permalink for definition: OWA. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+      <a href="#ref-for-dfn-owa-1" title="§ 4. Authority entities and properties">§ 4. Authority entities and properties</a> 
+    </li>
+  </ul>
     </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-property" aria-label="Links in this document to definition: property">
       <span class="caret"></span>
       <div>
@@ -472,7 +704,21 @@ We have the intention to provide data of the MetaBelgica platform in different d
       <p><b>Referenced in:</b></p>
       <ul>
     <li>
-      <a href="#ref-for-dfn-property-1" title="§ 3. Authority entities and properties">§ 3. Authority entities and properties</a> 
+      <a href="#ref-for-dfn-property-1" title="§ 4. Authority entities and properties">§ 4. Authority entities and properties</a> 
+    </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-property-instance" aria-label="Links in this document to definition: property instance">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-property-instance" aria-label="Permalink for definition: property instance. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+      <a href="#ref-for-dfn-property-instance-1" title="§ 5.1.1 Visibility property">§ 5.1.1 Visibility property</a> 
+    </li><li>
+      <a href="#ref-for-dfn-property-instance-2" title="§ 5.1.2 Legal basis">§ 5.1.2 Legal basis</a> 
     </li>
   </ul>
     </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-preferred-name" aria-label="Links in this document to definition: preferred-name">

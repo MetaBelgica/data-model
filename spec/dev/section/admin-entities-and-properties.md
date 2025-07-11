@@ -29,7 +29,7 @@ Indicating a visibility is merely an annotation, you (or the software using the 
 </p>
 
 
-The visibility property <em class="rfc2119">MUST BE</em> applicable to annotate a whole entity, a whole property or a specific instance of a property.
+The visibility property <em class="rfc2119">MUST BE</em> applicable to annotate a whole entity, a whole property or a specific [=property instance=].
 Entities annotated with <code>internal</code> or <code>shared</code> <em class="rfc2119">MUST NOT</em> be shown publicly.
 Entities annotated with <code>internal</code> <em class="rfc2119">MUST NOT</em> be shared with third-parties.
 
@@ -42,19 +42,23 @@ For example, the property `gender` has the visibility `shared`, hence all person
 </p>
 
 #### Legal basis
-We employ the property <code>legal basis</code> to qualify why an entity, a property or a property instance has a certain visibility.
+We employ the property <code>legal basis</code> to qualify why an entity, a property or a [=property instance=] has a certain visibility.
 
 There property <code>legal basis</code> <em class="rfc2119">MUST</em> link to one of the following legal basis (future versions of this specification may extend this list):
 
 * <code>Freedom of Information</code>: Used to indicate that an entity, property or property value should be publicly visible. Based on Belgian law, covering the access of administrative documents held by public bodies.
 * <code>Deceased</code>: Used to indicate that all personal data can be publicly visible, GDPR no longer applies
-* <code>Consent</code>: Used to indicate that something can be publicly visible, because the person described by the record (data-subject) provided consent to display the property value.
-* <code>Opt-out</code>: Used to indicate that something must not be publicly visible, because the person described by the record (data-subject) opted out.
+* <code>Consent</code>: Used to indicate that something can be publicly visible, because the person described by the record ([=data-subject=]) provided consent to display the property value.
+* <code>Opt-out</code>: Used to indicate that something must not be publicly visible, because the person described by the record ([=data-subject=]) opted out.
 * <code>Sensitive data</code>: Used to indicate that a property or property value should not be publicly visible as it is sensitive data which also due to data minimization must not be made publicly visible.
 
-The default legal basis for living persons is <code>Freedom of Information</code>.
-The default legal basis for deceased persons is <code>Deceased</code>
+
 When the legal basis <code>Consent</code> is used, there <em class="rfc2119">MUST</em> be a link to a <code>Consent</code> entity that provides further details about the consent.
+
+The following default values apply, for example for the initial bulk-load from MetaBelgica partners.
+
+* The default legal basis for living persons is <code>Freedom of Information</code>.
+* The default legal basis for persons with a known death date is <code>Deceased</code>
 
 #### Data minimization
 With respect to GDPR's data minimization, certain data should be adapted.
@@ -64,13 +68,6 @@ Todo: elaborate
 
 
 
-
-#### Person record category
-
-
-1. Deceased person
-2. Minor
-3. ...
-4. Public figure
-
 ### Data quality
+
+
