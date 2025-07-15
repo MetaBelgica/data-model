@@ -71,3 +71,5 @@ Todo: CIDOC-CRM mapping
 
 ### OSLO
 Todo: OSLO mapping
+
+#### OSLO Persoon

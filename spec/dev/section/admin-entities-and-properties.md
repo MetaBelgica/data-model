@@ -29,7 +29,7 @@ Indicating a visibility is merely an annotation, you (or the software using the 
 </p>
 
 
-The visibility property <em class="rfc2119">MUST BE</em> applicable to annotate a whole entity, a whole property or a specific [=property instance=].
+The visibility property <em class="rfc2119">MUST</em> be applicable to annotate a whole entity, a whole property or a specific [=property instance=].
 Entities annotated with <code>internal</code> or <code>shared</code> <em class="rfc2119">MUST NOT</em> be shown publicly.
 Entities annotated with <code>internal</code> <em class="rfc2119">MUST NOT</em> be shared with third-parties.
 
@@ -44,7 +44,7 @@ For example, the property `gender` has the visibility `shared`, hence all person
 #### Legal basis
 We employ the property <code>legal basis</code> to qualify why an entity, a property or a [=property instance=] has a certain visibility.
 
-There property <code>legal basis</code> <em class="rfc2119">MUST</em> link to one of the following legal basis (future versions of this specification may extend this list):
+The property <code>legal basis</code> <em class="rfc2119">MUST</em> link to one of the following legal bases (future versions of this specification may extend this list):
 
 * <code>Freedom of Information</code>: Used to indicate that an entity, property or property value should be publicly visible. Based on Belgian law, covering the access of administrative documents held by public bodies.
 * <code>Deceased</code>: Used to indicate that all personal data can be publicly visible, GDPR no longer applies
@@ -57,17 +57,37 @@ When the legal basis <code>Consent</code> is used, there <em class="rfc2119">MUS
 
 The following default values apply, for example for the initial bulk-load from MetaBelgica partners.
 
-* The default legal basis for living persons is <code>Freedom of Information</code>.
-* The default legal basis for persons with a known death date is <code>Deceased</code>
+* The default legal basis for living persons <em class="rfc2119">MUST</em> be <code>Freedom of Information</code>.
+* The default legal basis for persons with a known death date <em class="rfc2119">MUST</em> be <code>Deceased</code>
 
 #### Data minimization
-With respect to GDPR's data minimization, certain data should be adapted.
-Todo: elaborate
+With respect to GDPR's [=data minimization=], certain data must not be shown. To a certain extent this is already covered by the visibility property.
+However, in some cases data might still be needed and can be shown in aggregated form.
 
-* The default annotation <code>yearOnly</code> <em class="rfc2119">MUST</em> be applied to the year of birth.
+The following three annotations for a [=property=] or [=property instance=] can be chosen to accomodate data minimization use cases in which _some_ data should be shown instead of nothing.
 
+* <code>yearOnly</code>: Instead of a full date, only the year is shown. This supports entity disambiguation while preserving privacy-related details. 
+* <code>regionOnly</code>: Instead of a detailed place, only the next higher administrative level of the place is shown.
+* <code>countryOnly</code>: Instead of a detailed place, only the country of the place is shown.
+
+The following default values apply, for example for the initial bulk-load from MetaBelgica partners.
+
+* The default annotation for year of birth <em class="rfc2119">MUST</em> be <code>yearOnly</code> in case no date of death is known.
+* No data minimization annotation is needed for place of birth or place of death, if known the place will be shown.
 
 
 ### Data quality
+
+The MetaBelgica project brings together [=authority=] data from different Federal Scientific Institutes, 
+this also covers legacy data that might be incomplete. 
+Also new records might initially miss the value of certain data fields if unknown.
+Therefore we distinguish different data quality annotations.
+
+#### Possible Duplicate
+Our aim is to provide high-quality reference data and this requires to disambiguate entities by means of names with additional metadata.
+In case an entity only has one or more name spellings that occur multiple times in our data, we consider the record a possible duplicate.
+
+
+
 
 
